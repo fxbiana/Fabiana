@@ -51,11 +51,9 @@ background-color:#787878;
 float:left;
 }
 
-#clear{
+.clear{
 clear:both;
 }
-
- 
 
 #footer {
 border:solid 1px;
