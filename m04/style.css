@@ -10,14 +10,14 @@
    				font-style: normal;
 			}
 			* {
-				font-family: 'IsabellaSansRegular'
+				font-family: 'IsabellaSansRegular';
 				color: #665544;
-				text-align: center;}
+				text-align: center;
+			}
 			body {
 				width: 90%;
 				margin: 0 auto;
 				background-image: url(https://i.pinimg.com/564x/50/fa/82/50fa82cd0de2cc6a3a3dcdf40cb7eea2.jpg);
-				background-repeat: 2;
 				background-position: center;
 				background-size: 40% ;
 
@@ -57,5 +57,5 @@
  				background-image: url("...");
  				background-size:contain;
  				background-position: right;
- 				background-repeat:no-repeat;}
+ 				background-repeat:no-repeat;
 			}
