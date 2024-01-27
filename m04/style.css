@@ -1,0 +1,61 @@
+			
+			p {
+   				font-family: 'IsabellaSansRegular';
+   				font-weight: normal;
+   				font-style: normal;
+			}
+			#header {
+				font-family: 'CoreySansRegular';
+   				font-weight: normal;
+   				font-style: normal;
+			}
+			* {
+				font-family: 'IsabellaSansRegular'
+				color: #665544;
+				text-align: center;}
+			body {
+				width: 90%;
+				margin: 0 auto;
+				background-image: url(https://i.pinimg.com/564x/50/fa/82/50fa82cd0de2cc6a3a3dcdf40cb7eea2.jpg);
+				background-repeat: 2;
+				background-position: center;
+				background-size: 40% ;
+
+			}
+
+			#content {
+				overflow: auto;}
+			#nav, #feature, #footer {
+				margin: 1%;}
+			.column1, .column2, .column3 {
+				width: 31.3%;
+				float: left;
+				margin: 1%;}
+			.column3 {
+				margin-right: 0%;}
+			li {
+				display: inline;
+				padding: 0.5em;}
+			#nav, #footer {
+				background-color: #a68a64;
+				padding: 0.5em 0;}
+			#feature, .article {
+				height: 10em;
+				margin-bottom: 1em;
+				background-color: #efefef;}
+			.article.column1 {
+				background-color: #c2c5aa;
+			}
+			.article.column2 {
+				background-color: #656d4a;
+			}
+			.article.column3 {
+				background-color: #414833;
+			}
+			#feature {
+				background-color: #b6ad90;
+ 				background-image: url("...");
+ 				background-size:contain;
+ 				background-position: right;
+ 				background-repeat:no-repeat;}
+			}
