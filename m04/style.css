@@ -27,10 +27,12 @@
 				overflow: auto;}
 			#nav, #feature, #footer {
 				margin: 1%;}
-			.img {
-				mix-blend-mode: multiply;
-				float: right;
-			}
+			#feature {
+ 				background-color: #8CC63E;
+ 				background-image: url("https://images.vexels.com/media/users/3/280408/isolated/preview/9a948ff5fb4ad1f60db6e318e08b85e7-flower-cartoon-smiling.png");
+				background-size:contain;
+ 				background-position: right;
+ 				background-repeat:no-repeat;}
 			.column1, .column2, .column3 {
 				width: 31.3%;
 				float: left;
