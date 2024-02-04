@@ -1,11 +1,11 @@
-let table = prompt("Give me a number 0-10");
-var answer = table;             // Unit of table
-var i = 1;                 // Set counter to 1
-var msg = 'Multiplication Table';              // Message
+var table = prompt("Give me a number 0-10");
+var answer = parseInt(table); // Convert input to number
 
-  // Do addition
-for (var i=1; i<=10; i++) {
-    msg+= i + ' x ' + answer + " = " + (i*answer) + '<br />';
+var msg = 'Multiplication Table'; // Message
+
+// Do multiplication
+for (var i = 1; i <= 10; i++) {
+    msg += i + ' x ' + answer + " = " + (i * answer) + '<br />';
 }
 
 // Write the message into the page
