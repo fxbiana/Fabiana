@@ -1,4 +1,4 @@
-let i = prompt("Please a number 1-10", "0");
+var i = prompt("Please a number 1-10", "0");
 var msg = '<h2>Multiplication Table</h2>';
 if (person != null) {
   document.getElementById("demo").innerHTML =
