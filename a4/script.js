@@ -1,3 +1,22 @@
+function validateForm() {
+var x = document.myForm.fname.value;
+console.log(x);
+if (x==null || x==="") {
+alert("First name must be filled out");
+return false;
+}
+console.log(x.length);
+if (x.length >= 10)
+{
+alert("Must be less than 10");
+return false;
+
+}
+if (!isNaN(x)) {
+alert("Name cannot be a number");
+return false;
+}
+}
 function isValid() {
     if (firstName() //&&
        // lastName()
