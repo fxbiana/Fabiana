@@ -29,7 +29,7 @@ elHotel2.textContent = details2;
 var details3 = sunsetHotel.name + ' rooms: ';
     details3 += sunsetHotel.checkAvailability();
 var elHotel3 = document.getElementById('hotel3');
-elHotel2.textContent = details2;
+elHotel3.textContent = details3;
 
 /* 
 NOTE: textContent does not work in IE8 or earlier
