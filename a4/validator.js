@@ -7,7 +7,7 @@ function isValid() {
         return false;
 }
 
-FirstName.addEventListener('blur', firstName, false);
+firstName.addEventListener('blur', firstName, false);
 function firstName(){
     //1) Create variable
     var validFirstname=false;
@@ -33,7 +33,7 @@ function firstName(){
     //5) return status of each field
     return (validFirstname);
 }
-
+lastName.addEventListener('blur', lastName, false);
 function lastName(){
     //1) Create variable
     var validLastname=false;
@@ -51,17 +51,19 @@ function lastName(){
     //5) return status of each field
     return (validFirstname && validLastname);
 }
-
+email.addEventListener('blur', email, false);
 function email(){
+    var validEmail=false;
     var userEmail = document.getElementById("email").value;
     var atpos = userEmail.indexOf("@");
     var dotpos = userEmail.lastIndexOf(".");
-    if (atpos< 1 || dotpos<atpos+2 || dotpos+2>=userEmail.length) {
+    if (atpos< 1 || dotpos<atpos+2 || dotpos+2>=userEmail.length || isNaN(userEmail) || userEmail==="") {
         errorMessages += "<p>Invalid email</p>";
+    }
         else
-            return true;
+            validEmail= true;
 }
-
+phonNumber.addEventListener('blur', phoneNumber, false);
 function phoneNumber(){
     var phone = document.getElementById("Phone").value;
     if (isNaN(phone) || phone.length >15 || phone===null || phone==="")
@@ -69,6 +71,7 @@ function phoneNumber(){
         else
           return true; //Or assign the value to a variable. For example validPhone = true;
 }
+username.addEventListener('blur', username, false);
 function username() {
     var validUsername=document.getElementById("Username");
     if (username==="null" || username==="" || username>=12) {
@@ -88,33 +91,19 @@ function city(){
 
 }
 function state(){
-    if( document.myForm.State.value == "-1" ) {
-            alert( "Please provide your state!" );
-            return false;
-         }
-    else
         return true;
 }
 function country() {
-    if( document.myForm.Country.value == "-1" ) {
-            alert( "Please provide your country!" );
-            return false;
-         }
          return true;
-
 }
 function zipcode() {
     var zipcode= document.getElementById("ZipCode").value;
     var country = document.getElementById("country").value;
-    if(document.myForm.zipcode.value == "" || isNaN( document.myForm.zipcode.value ) ||
-            document.myForm.Zip.value.length != 5 ) {
-            alert( "Please provide a zip in the format #####." );
+    if(country === "USA" && document.myForm.Zip.value.length != 5 ) {
+            errorMessages+="Please provide a zip in the format #####.";
             document.myForm.Zip.focus() ;
             return false;
          }    
-if (country === "USA")''
-// validate Zipcode according to the rules
 else
-//Zipcode is OK. For example: validZipcode = true;
     validZipCode=true
 } 
