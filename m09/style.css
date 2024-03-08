@@ -1,0 +1,13 @@
+body {
+  height: 100vh;
+  background: beige;
+}
+
+.dot {
+  border-radius: 50%;
+  position: absolute;
+}
+
+form {
+  margin-bottom: 10px;
+}
